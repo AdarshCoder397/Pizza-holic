@@ -1,0 +1,100 @@
+.form {
+    height: 70vmin;
+    width: 80vmin;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.7);
+}
+input{
+    height: 4vmin;
+}
+
+.name {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.email {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.phone {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.msg {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.name>h5 {
+    margin-top: 3vmax;
+}
+
+.name>input {
+    margin-top: 3vmax;
+}
+
+.email>h5 {
+    margin-top: 3vmax;
+}
+
+.email>input {
+    margin-top: 3vmax;
+}
+
+.phone>h5 {
+    margin-top: 3vmax;
+}
+
+.phone>input {
+    margin-top: 3vmax;
+}
+
+.msg>h5 {
+    margin-top: 3vmax;
+}
+.msg > textarea {
+    margin-top: 3vmax;
+    margin-left: -1vmax;
+    resize: none;
+}
+.selector{
+    height: 3vmax !important;
+    width: 22vmax !important;
+    margin-top: 2vmax;
+    
+}
+
+.btn {
+    width: 13vmax;
+    padding: 0.5vmax;
+    transition: all 0.5s;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid rgba(100, 100, 100, 0.897);
+    background-color: rgb(217, 255, 0);
+    font: 500 1.5vmax "Courier";
+    margin-top: 4vmax;
+}
+.btn_cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width:700px){
+    .form{
+        height: 80vmin;
+    }
+    .btn{
+        width: 18vmax;
+        font-size: 2vmax;
+    }
+}

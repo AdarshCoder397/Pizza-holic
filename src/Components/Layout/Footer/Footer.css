@@ -1,0 +1,124 @@
+#footer {
+    margin-top: 10vmax;
+    padding: 2vmax;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.left_footer {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left_footer>h3 {
+    margin: 1vmax;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.left_footer>a>h4 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.left_footer>h4 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.left_footer>a {
+    text-decoration: none;
+    color: white;
+}
+
+.left_footer>img {
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+
+.mid_footer {
+    width: 60%;
+    text-align: center;
+}
+
+.mid_footer>p>span {
+    background-image: linear-gradient(-225deg,
+            #4968f0 0%,
+            #cc00ff 29%,
+            #ff1361 67%,
+            #003cff 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 4s linear infinite;
+    display: inline-block;
+}
+
+.mid_footer>h1 {
+    color: red;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mid_footer>p {
+    max-width: 60%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 1vmax auto;
+}
+
+.right_footer {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right_footer>h4 {
+    margin: 1vmax;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2vmax;
+    text-decoration: underline;
+}
+
+.right_footer>h3 {
+    font-weight: 20;
+}
+
+@media (max-width:850px) {
+    .left_footer>h3 {
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .left_footer>h4 {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .left_footer>p {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .right_footer>h4 {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .right_footer>h3 {
+        text-align: center;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,44 @@
+.productCard {
+    width: 14vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    border-radius: 5px;
+}
+    
+.productCard>img {
+    margin-top: 1vmax;
+    width: 14vmax;
+}
+
+.productCard>p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+}
+
+.productCard>span {
+    margin: 0.5vmax;
+    color: tomato;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.productCard:hover {
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.527);
+    transform: translateY(-2vmax);
+}
+
+@media (max-width:620px) {
+    .productCard>p {
+        font-size: 1.7vmax;
+    }
+
+    .productCard>span {
+        font-size: 1.5vmax;
+    }
+}
