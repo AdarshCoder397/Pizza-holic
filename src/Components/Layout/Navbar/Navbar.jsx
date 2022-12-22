@@ -3,7 +3,8 @@ import React from "react";
 import {MdAccountCircle, MdHome, MdShoppingCart} from 'react-icons/md'
 
 const Navbar = () => {
-  return( <ReactNavbar 
+  return( <div style={{backgroundColor:"black"}}>
+    <ReactNavbar 
     burgerColor="red" 
     navColor1="#1b1b1b" 
     logo="https://img.freepik.com/premium-vector/pizza-logo-vector_25327-119.jpg"
@@ -21,10 +22,10 @@ const Navbar = () => {
     link2Text="Order"
     link3Text="Apply For Franchise"
     link4Text="About"
-    link1Url="/home"
-    link2Url="/order"
-    link3Url="/apply"
-    link4Url="/about"
+    link1Url="/home#home"
+    link2Url="/order#order"
+    link3Url="/apply#franchise"
+    link4Url="/about#about"
     link1Size="1.6vmax"
     link1Color="#FFE5E5"
     nav2justifyContent="flex-end"
@@ -41,6 +42,7 @@ const Navbar = () => {
     cartIconUrl="/order"
     profileIconUrl="/about"
     />
+    </div>
   )
 };
 

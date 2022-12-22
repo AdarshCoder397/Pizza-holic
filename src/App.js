@@ -6,6 +6,7 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Order from "./Components/Order/Order";
 import Franchise from "./Components/Franchise/Franchise";
+import Item from "./Components/Item/Item";
 
 function App() {
   return (
@@ -54,6 +55,14 @@ function App() {
           element={
             <>
               <Franchise />
+            </>
+          }
+        /> 
+        <Route
+          path="/item/:id"
+          element={
+            <>
+              <Item />
             </>
           }
         />

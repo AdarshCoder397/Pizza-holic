@@ -1,0 +1,81 @@
+.product {
+    height: 150vmin;
+    margin-bottom: -21vmin;
+    overflow-y: scroll;
+}
+
+.productBody {
+    margin-top: 6vmax;
+    height: 70vmin;
+}
+
+.productArea>img {
+    height: 20vmax;
+    margin-top: 14vmin;
+    margin-left: 5vmax;
+}
+
+.productArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.productInfo>p {
+    margin-top: 1vmax;
+    font-size: x-large;
+}
+
+.product {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.revBtn {
+    padding: 1vmax !important;
+    background-color: green !important;
+    border: 1px solid gray;
+    margin-top: 3vmax !important;
+    color: wheat !important;
+}
+
+.productReviewCard {
+    margin: 2vmax;
+    display: flex;
+    padding: 0.5vmax;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.7);
+    width: 40vmin;
+    height: 10vmax;
+}
+
+.main_temp {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.revBtn:hover{
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+.reviewInfo {
+    margin-top: 0.5vmax;
+    margin-left: 0.6vmax;
+}
+.reviewInfo > p {
+    margin-top: 0.5vmax;
+}
+@media screen and (max-width:700px){
+    .productReviewCard{
+        width: 100vmin;
+        height: 14vmax;
+    }
+    .product{
+        height: 200vmin;
+    }
+}
+textarea{
+    resize: none;
+    height: 5vmax;
+}   

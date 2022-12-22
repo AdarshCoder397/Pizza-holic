@@ -6,7 +6,7 @@ import FranchiseForm from './Form/Form'
 
 const About = () => {
   return (
-    <div className="main">
+    <div className="main" id="about">
       <div className="first_half">
         <div className="info">
           <h2>About Us</h2>

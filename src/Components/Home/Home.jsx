@@ -2,92 +2,13 @@ import React from "react";
 import { MdLocalPizza } from "react-icons/md";
 import "./Home.css";
 import Product from "./Product/Product";
+import List from '../../List'
 
 const Home = () => {
-  const items = [
-    {
-      name: "Test Pizza",
-      price: "49",
-      link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-      images: [
-        {
-          url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        },
-      ],
-    },
-    {
-      name: "Test Pizza",
-      price: "49",
-      link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-      images: [
-        {
-          url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        },
-      ],
-    },
-    {
-      name: "Test Pizza",
-      price: "49",
-      link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-      images: [
-        {
-          url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        },
-      ],
-    },
-    {
-      name: "Test Pizza",
-      price: "49",
-      link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-      images: [
-        {
-          url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        },
-      ],
-    },
-    {
-      name: "Test Pizza",
-      price: "49",
-      link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-      images: [
-        {
-          url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        },
-      ],
-    },
-    {
-      name: "Test Pizza",
-      price: "49",
-      link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-      images: [
-        {
-          url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        },
-      ],
-    },
-    {
-      name: "Test Pizza",
-      price: "49",
-      link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-      images: [
-        {
-          url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        },
-      ],
-    },
-    {
-      name: "Test Pizza",
-      price: "49",
-      link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-      images: [
-        {
-          url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        },
-      ],
-    },
-  ];
+  const items = List('home')
+  
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="banner">
         <p>
           Welcome to the <span>Pizza Holic</span>!
@@ -106,6 +27,7 @@ const Home = () => {
           {items && items.map((product) => <Product product={product} />)}
         </div>
       </div>
+      <h2 className="homeh2">Gallery</h2>
     </div>
   );
 };
