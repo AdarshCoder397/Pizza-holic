@@ -1,5 +1,5 @@
 .product {
-    height: 150vmin;
+    height: 100vmin;
     margin-bottom: -21vmin;
     overflow-y: scroll;
 }
@@ -52,6 +52,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .revBtn:hover{
@@ -79,3 +80,6 @@ textarea{
     resize: none;
     height: 5vmax;
 }   
+.reviews{
+    height: 180vmin !important;
+}

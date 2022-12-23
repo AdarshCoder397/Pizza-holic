@@ -4,6 +4,7 @@ import { db } from "../../../firebase";
 import { addDoc, collection } from "firebase/firestore";
 import { types, useAlert } from "react-alert";
 
+
 const FranchiseForm = ({ type }) => {
   const alert = useAlert();
   const states = [
