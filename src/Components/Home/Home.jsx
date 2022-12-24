@@ -27,7 +27,7 @@ const Home = () => {
           {items && items.map((product) => <Product product={product} />)}
         </div>
       </div>
-      <h2 className="homeh2">Gallery</h2>
+      <h2 className="homeh2">Top reviews</h2>
     </div>
   );
 };

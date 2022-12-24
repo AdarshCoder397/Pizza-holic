@@ -10,8 +10,16 @@ import { Avatar, Rating } from "@mui/material";
 import { types, useAlert } from "react-alert";
 import { auth, db } from "../../firebase";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-import revItems from "../../firebase";
-import { collection } from "firebase/firestore";
+import colRef from "../../firebase";
+import { addDoc, collection, getDocs } from "firebase/firestore";
+
+//Fetching data from db
+let revItems = [];
+getDocs(colRef).then((snapshot) => {
+  snapshot.docs.forEach((doc) => {
+    revItems.push({ ...doc.data(), id: doc.id });
+  });
+});
 
 const generateRecaptcha = () => {
   window.recaptchaVerifier = new RecaptchaVerifier(
@@ -46,8 +54,8 @@ const Item = () => {
   const [name, setName] = React.useState("");
   const [mobileNumber, setMobileNumber] = React.useState("");
   const [review, setReview] = React.useState("");
-  const [otp, setOtp] = React.useState(0);
-  const [reviews, setReviews] = React.useState(false);
+  const [stars, setStars] = React.useState("");
+  const [otp, setOtp] = React.useState();
   const [otpView, setOtpView] = React.useState(false);
 
   const sendOtp = () => {
@@ -77,25 +85,19 @@ const Item = () => {
 
   const verifyOtp = async () => {
     if (otp.length === 6) {
+      setOpen(false);
       window.confirmationResult
         .confirm(otp)
         .then((result) => {
-          let temp_revItem = { ...window.temp_item };
-          temp_revItem.reviews = window.temp_items.reviews.push({
-            name: name,
-            review: review,
-            stars: "5",
-          });
-          console.log(temp_revItem);
-          revItems.map((item) => {
-            if (item.link === id) {
-              const colRef = collection(db, "items");
-              let data = colRef.doc(item.id);
-              alert.show("Review Added!", { type: types.SUCCESS });
-            } else {
-              const colRef = collection(db, "items");
-            }
-          });
+          try {
+            const docRef = addDoc(collection(db, "items"), {
+              link: id,
+              reviews: [{ name: name, review: review, stars: stars }],
+            });
+            alert.show("Review Added!", { type: types.SUCCESS });
+          } catch (e) {
+            alert.show("Couldn't add your review!");
+          }
         })
         .catch((error) => {
           alert.show("Wrong OTP!", { type: types.ERROR });
@@ -104,7 +106,7 @@ const Item = () => {
     }
   };
   return (
-    <div className={`product ${reviews && "reviews"}`}>
+    <div className={`product`}>
       <div className="productBody">
         {items.map((item) => {
           if (item.link === id) {
@@ -124,12 +126,12 @@ const Item = () => {
           }
         })}
         <div className="productReview">
-          {revItems.map((item) => {
-            if (item.link === id) {
-              return (
-                <div>
-                  <h2 className="homeh2">Reviews</h2>
-                  <div className="main_temp">
+          <h2 className="homeh2">Reviews</h2>
+          <div className="main_temp">
+            {revItems.map((item) => {
+              if (item.link == id) {
+                return (
+                  <div>
                     {item.reviews.map((review) => {
                       return (
                         <div className="productReviewCard">
@@ -142,7 +144,7 @@ const Item = () => {
                             <h5>{review.name}</h5>
                             <Rating
                               name="read-only"
-                              value={review.stars}
+                              value={Number(review.stars)}
                               readOnly
                             />
                             <p> {review.review}</p>
@@ -151,12 +153,10 @@ const Item = () => {
                       );
                     })}
                   </div>
-                </div>
-              );
-            } else {
-              setReviews(false)
-            }
-          })}
+                );
+              }
+            })}
+          </div>
         </div>
       </div>
       <div>
@@ -196,6 +196,14 @@ const Item = () => {
                   onChange={(event) => setReview(event.target.value)}
                 />
               </label>
+              <Typography component="legend">Ratings</Typography>
+              <Rating
+                name="simple-controlled"
+                value={Number(stars)}
+                onChange={(e) => {
+                  setStars(e.target.value);
+                }}
+              />
               {otpView && (
                 <>
                   <br />

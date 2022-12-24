@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import pizza from "../../img/pizza2.png";
+import pizza from '../../img/pizza2.png'
 import { MdHandyman } from "react-icons/md";
 import FranchiseForm from './Form/Form'
 

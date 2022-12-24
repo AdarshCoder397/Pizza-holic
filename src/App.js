@@ -4,7 +4,7 @@ import Navbar from "./Components/Layout/Navbar/Navbar";
 import Footer from "./Components/Layout/Footer/Footer";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
-import Order from "./Components/Order/Order";
+import Order from "./Components/Items/Items";
 import Franchise from "./Components/Franchise/Franchise";
 import Item from "./Components/Item/Item";
 
@@ -42,7 +42,7 @@ function App() {
         />
         <Route
           exact
-          path="/order"
+          path="/items"
           element={
             <>
               <Order />

@@ -36,7 +36,7 @@
     background-color: green !important;
     border: 1px solid gray;
     margin-top: 3vmax !important;
-    color: wheat !important;
+    color: white !important;
 }
 
 .productReviewCard {
@@ -48,9 +48,9 @@
     height: 10vmax;
 }
 
-.main_temp {
+.main_temp{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -69,7 +69,7 @@
 }
 @media screen and (max-width:700px){
     .productReviewCard{
-        width: 100vmin;
+        width: 70vmin;
         height: 14vmax;
     }
     .product{

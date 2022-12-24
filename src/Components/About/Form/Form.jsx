@@ -130,7 +130,7 @@ const FranchiseForm = ({ type }) => {
             Submit
           </button>
         </div>
-      </div>
+      </div> 
     );
   }
   if (type === "outlet") {

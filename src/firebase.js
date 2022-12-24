@@ -16,10 +16,4 @@ export const auth = getAuth(app);
 export const db = getFirestore(app);
 
 const colRef = collection(db,'items')
-let revItems = []
-getDocs(colRef).then((snapshot)=>{
-  snapshot.docs.forEach((doc)=>{
-    revItems.push({ ...doc.data(),id:doc.id })
-  })
-})
-export default revItems
+export default colRef
