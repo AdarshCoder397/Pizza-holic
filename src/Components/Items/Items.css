@@ -1,5 +1,7 @@
 .order{
     height: 100vmin;
+    overflow-y: scroll;
+    margin-bottom: -21vmin;
 }
 .itemss{
     display: flex;

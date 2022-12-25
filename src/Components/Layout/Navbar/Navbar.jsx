@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div style={{ backgroundColor: "black" }}>
       <ReactNavbar
-        burgerColor="red"
+        burgerColor="black"
         navColor1="#1b1b1b"
         logo="https://img.freepik.com/premium-vector/pizza-logo-vector_25327-119.jpg"
         logoHoverColor="#1b1b1b"

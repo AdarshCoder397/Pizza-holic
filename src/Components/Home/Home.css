@@ -23,6 +23,9 @@
     .banner>h2 {
         font: 500 4.2vmax 'Courier' !important;
     }
+    .long{
+        height:30vmin !important;
+    }
 }
 
 .banner>h2 {
@@ -118,3 +121,4 @@
     margin: 2vmax auto;
     width: 80vw;
 }
+

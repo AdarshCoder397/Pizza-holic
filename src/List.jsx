@@ -14,72 +14,32 @@ const List = (props) => {
         ],
       },
       {
-        name: "Test Pizza",
-        price: "49",
-        link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
+        name: "Cheese Paneer Pizza",
+        price: "99",
+        link: "cheese-paneer-pizza",
         images: [
           {
-            url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
+            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmk-R4b9jTwtNgJ4hvEfDgs-vzlzTuDKm-MQ&usqp=CAU",
           },
         ],
       },
       {
-        name: "Test Pizza",
-        price: "49",
-        link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
+        name: "Fresh Veggie Onion Capsicum",
+        price: "149",
+        link: "veggie-onion-capsicum",
         images: [
           {
-            url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
+            url: "https://www.dominos.co.in//files/items/Fresh_Veggie.jpg",
           },
         ],
       },
       {
-        name: "Test Pizza",
-        price: "49",
-        link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
+        name: "Cheese Corn Pizza",
+        price: "99",
+        link: "cheese-corn-pizza",
         images: [
           {
-            url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-          },
-        ],
-      },
-      {
-        name: "Test Pizza",
-        price: "49",
-        link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        images: [
-          {
-            url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-          },
-        ],
-      },
-      {
-        name: "Test Pizza",
-        price: "49",
-        link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        images: [
-          {
-            url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-          },
-        ],
-      },
-      {
-        name: "Test Pizza",
-        price: "49",
-        link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        images: [
-          {
-            url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-          },
-        ],
-      },
-      {
-        name: "Test Pizza",
-        price: "49",
-        link: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
-        images: [
-          {
-            url: "https://cdn.winsightmedia.com/platform/files/public/2019-03/background/slices-pizza-Shutterstock_1551894182.jpg?VersionId=gmt0HTnRT9vAN3CbWtjUdG5ZFCfB6CFB",
+            url: "https://buddyspizzaandcafe.com/wp-content/uploads/2021/06/CHEESY-CORN-removebg-preview.png",
           },
         ],
       },
@@ -97,11 +57,85 @@ const List = (props) => {
             url: "https://thefusionpizza.in/wp-content/uploads/2021/12/PANEER-ONION-600x600.jpg",
           },
         ],
-        reviews: [
-          { name: "Adarsh", review: "Great" ,stars:1},
-          { name: "Adarsh", review: "Great work " ,stars:3},
-          { name: "Adarsh", review: "Nice" ,stars:5},
-          { name: "Adarsh", review: "Amazing" ,stars:4.5},
+      },
+      {
+        name: "Cheese Paneer Pizza",
+        price: "99",
+        link: "cheese-paneer-pizza",
+        images: [
+          {
+            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmk-R4b9jTwtNgJ4hvEfDgs-vzlzTuDKm-MQ&usqp=CAU",
+          },
+        ],
+      },
+      {
+        name: "Cheese Tomato Pizza",
+        price: "99",
+        link: "cheese-tomato-pizza",
+        images: [
+          {
+            url: "https://www.dominos.co.in/files/items/cheese_and_tomato.png",
+          },
+        ],
+      },
+      {
+        name: "Cheese Corn Pizza",
+        price: "99",
+        link: "cheese-corn-pizza",
+        images: [
+          {
+            url: "https://buddyspizzaandcafe.com/wp-content/uploads/2021/06/CHEESY-CORN-removebg-preview.png",
+          },
+        ],
+      },
+      {
+        name: "Double Cheese Margherita",
+        price: "149",
+        link: "double-cheese-margherita",
+        images: [
+          {
+            url: "https://www.dominos.co.in//files/items/Double_Cheese_Margherita.jpg",
+          },
+        ],
+      },
+      {
+        name: "Fresh Veggie Onion Capsicum",
+        price: "149",
+        link: "veggie-onion-capsicum",
+        images: [
+          {
+            url: "https://www.dominos.co.in//files/items/Fresh_Veggie.jpg",
+          },
+        ],
+      },
+      {
+        name: "Paneer Makhani",
+        price: "149",
+        link: "paneer-makhani",
+        images: [
+          {
+            url: "https://www.dominos.co.in//files/items/Paneer_Makhni.jpg",
+          },
+        ],
+      },
+      {
+        name: "Onion Pizza",
+        price: "49",
+        link: "onion-pizza",
+        images: [
+          {
+            url: "http://pizzaparadise.in/wp-content/uploads/2019/10/paneer-onion-pizza-mania.png",
+          },
+        ],
+      },
+      {
+        name: "Tomato Pizza",
+        price: "49",
+        link: "tomato-pizza",
+        images: [
+          {
+            url: "https://www.dominos.co.in/files/items/pizza_mania_tomato.png",
+          },
         ],
       },
     ];
